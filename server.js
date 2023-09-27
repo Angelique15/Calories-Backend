@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://pioher02.github.io/Project-CaloriesCalculator/',
   credentials: true,
 };
 
