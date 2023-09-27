@@ -42,6 +42,13 @@ app.use((err, _, res) => {
   });
 });
 
+// Habilitar CORS para rutas que comiencen con '/api/not-allowed-foods/'
+app.use('/api/not-allowed-foods', (req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'https://angelique15.github.io');
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
+});
+
 // Ruta para obtener los alimentos no recomendados según el tipo de sangre
 app.get('/api/not-allowed-foods/:bloodType', (req, res) => {
   const { bloodType } = req.params;
