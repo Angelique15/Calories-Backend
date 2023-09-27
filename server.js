@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const corsOptions = {
-  origin: 'https://pioher02.github.io/Project-CaloriesCalculator/',
+  origin: 'https://pioher02.github.io/',
   credentials: true,
 };
 
@@ -18,7 +18,7 @@ app.use('/api/not-allowed-foods', notAllowedFoodsRoutes);
 
 app.use(
   cors({
-    origin: 'http://localhost:3000',
+    origin: 'https://pioher02.github.io/',
     credentials: true,
   })
 );
