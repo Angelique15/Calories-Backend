@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const corsOptions = {
-  origin: 'https://pioher02.github.io/',
+  origin: 'https://rad-vacherin-853b41.netlify.app',
   credentials: true,
 };
 
@@ -18,7 +18,7 @@ app.use('/api/not-allowed-foods', notAllowedFoodsRoutes);
 
 app.use(
   cors({
-    origin: 'https://pioher02.github.io/',
+    origin: 'https://rad-vacherin-853b41.netlify.app',
     credentials: true,
   })
 );
