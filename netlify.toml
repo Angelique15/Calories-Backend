@@ -1,6 +1,11 @@
 [build]
   functions = "lambda"
 
+  [[redirects]]
+  from = "/api/*"
+  to = "/server.js"
+  status = 200
+
 [[redirects]]
   from = "/api/users/signup"
   to = "/.netlify/functions/signupCtrl"
