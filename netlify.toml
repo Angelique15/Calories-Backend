@@ -1,2 +1,47 @@
 [build]
-functions = "lambda"
+  functions = "lambda"
+
+[[redirects]]
+  from = "/api/users/signup"
+  to = "/.netlify/functions/signupCtrl"
+  status = 200
+
+[[redirects]]
+  from = "/api/users/login"
+  to = "/.netlify/functions/loginCtrl"
+  status = 200
+
+[[redirects]]
+  from = "/api/users/logout"
+  to = "/.netlify/functions/logoutCtrl"
+  status = 200
+
+[[redirects]]
+  from = "/api/not-allowed-foods"
+  to = "/.netlify/functions/getNotAllowedFoods"
+  status = 200
+
+[[redirects]]
+  from = "/api/users/current/:id"
+  to = "/.netlify/functions/updateUserCtrl"
+  status = 200
+
+[[redirects]]
+  from = "/api/users/current"
+  to = "/.netlify/functions/updateConsumeCtrl"
+  status = 200
+
+[[redirects]]
+  from = "/api/users/current/:id"
+  to = "/.netlify/functions/getUserInfoCtrl"
+  status = 200
+
+[[redirects]]
+  from = "/api/allowed-foods/:userBloodType"
+  to = "/.netlify/functions/getAllowedFoods"
+  status = 200
+
+[[redirects]]
+  from = "/api/diary/:date"
+  to = "/.netlify/functions/getProductsConsumedCtrl"
+  status = 200
